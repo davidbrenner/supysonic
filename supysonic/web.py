@@ -50,6 +50,7 @@ def create_application():
 
 	app = Flask(__name__)
 	app.secret_key = '?9huDM\\H'
+	app.config['UPLOAD_FOLDER'] = '/home/davidb/sandbox/supysonic/uploads'
 
 	app.teardown_appcontext(teardown_db)
 
